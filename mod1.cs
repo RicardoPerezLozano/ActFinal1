@@ -14,5 +14,21 @@ namespace ActFinal1
         {
             InitializeComponent();
         }
+
+        private void verificar_Click(object sender, EventArgs e)
+        {
+            Double primero = Convert.ToDouble(numero1.Text);
+            Double segundo = Convert.ToDouble(numero2.Text);
+
+
+            if (primero > segundo) { medio.Text = ">"; } else if (segundo > primero) { medio.Text = "<"; };
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+           
+        }
     }
 }
