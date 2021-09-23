@@ -33,5 +33,12 @@ namespace ActFinal1
 
             modulo3.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form modulo4 = new mod4();
+
+            modulo4.Show();
+        }
     }
 }
