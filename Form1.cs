@@ -48,5 +48,17 @@ namespace ActFinal1
 
             modulo2.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form modulo5 = new mod5();
+
+            modulo5.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

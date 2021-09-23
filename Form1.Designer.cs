@@ -35,13 +35,15 @@ namespace ActFinal1
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(185, 114);
+            this.button1.Location = new System.Drawing.Point(186, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(98, 49);
             this.button1.TabIndex = 0;
             this.button1.Text = "modulo1";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +51,9 @@ namespace ActFinal1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(531, 114);
+            this.button2.Location = new System.Drawing.Point(493, 107);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(98, 49);
             this.button2.TabIndex = 1;
             this.button2.Text = "modulo2";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +61,9 @@ namespace ActFinal1
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(185, 217);
+            this.button3.Location = new System.Drawing.Point(186, 210);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(98, 49);
             this.button3.TabIndex = 2;
             this.button3.Text = "modulo3";
             this.button3.UseVisualStyleBackColor = true;
@@ -69,9 +71,9 @@ namespace ActFinal1
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(531, 217);
+            this.button4.Location = new System.Drawing.Point(493, 210);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(98, 49);
             this.button4.TabIndex = 3;
             this.button4.Text = "modulo4";
             this.button4.UseVisualStyleBackColor = true;
@@ -79,27 +81,50 @@ namespace ActFinal1
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(185, 316);
+            this.button5.Location = new System.Drawing.Point(186, 309);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(98, 49);
             this.button5.TabIndex = 4;
             this.button5.Text = "modulo5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(531, 316);
+            this.button6.Location = new System.Drawing.Point(493, 309);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(98, 49);
             this.button6.TabIndex = 5;
             this.button6.Text = "modulo6";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(267, 410);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(258, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Taller controlador de versiones Programacion IV\r\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(186, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(405, 27);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Elija el modulo al que desea ingresar\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -109,6 +134,7 @@ namespace ActFinal1
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -120,6 +146,8 @@ namespace ActFinal1
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

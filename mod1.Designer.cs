@@ -34,6 +34,9 @@ namespace ActFinal1
             this.numero1 = new System.Windows.Forms.TextBox();
             this.numero2 = new System.Windows.Forms.TextBox();
             this.medio = new System.Windows.Forms.Label();
+            this.rNumero2 = new System.Windows.Forms.Label();
+            this.rNumero1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // verificar
@@ -79,11 +82,40 @@ namespace ActFinal1
             this.medio.Size = new System.Drawing.Size(0, 44);
             this.medio.TabIndex = 4;
             // 
+            // rNumero2
+            // 
+            this.rNumero2.AutoSize = true;
+            this.rNumero2.Location = new System.Drawing.Point(486, 198);
+            this.rNumero2.Name = "rNumero2";
+            this.rNumero2.Size = new System.Drawing.Size(0, 15);
+            this.rNumero2.TabIndex = 5;
+            // 
+            // rNumero1
+            // 
+            this.rNumero1.AutoSize = true;
+            this.rNumero1.Location = new System.Drawing.Point(260, 198);
+            this.rNumero1.Name = "rNumero1";
+            this.rNumero1.Size = new System.Drawing.Size(0, 15);
+            this.rNumero1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(135, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(535, 27);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Compare dos numero y mire cual es menor!";
+            // 
             // mod1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.rNumero1);
+            this.Controls.Add(this.rNumero2);
             this.Controls.Add(this.medio);
             this.Controls.Add(this.numero2);
             this.Controls.Add(this.numero1);
@@ -103,5 +135,8 @@ namespace ActFinal1
         private System.Windows.Forms.TextBox numero1;
         private System.Windows.Forms.TextBox numero2;
         private System.Windows.Forms.Label medio;
+        private System.Windows.Forms.Label rNumero2;
+        private System.Windows.Forms.Label rNumero1;
+        private System.Windows.Forms.Label label1;
     }
 }

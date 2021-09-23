@@ -21,7 +21,16 @@ namespace ActFinal1
             Double segundo = Convert.ToDouble(numero2.Text);
 
 
-            if (primero > segundo) { medio.Text = ">"; } else if (segundo > primero) { medio.Text = "<"; };
+            if (primero > segundo) {
+                medio.Text = ">"; 
+                rNumero1.Text = "Este es el mayor";
+                rNumero2.Text = "Este es el menor";
+            } 
+            else if (segundo > primero) {
+                medio.Text = "<"; 
+                rNumero2.Text = "Este es el mayor";
+                rNumero1.Text = "Este es el menor";
+            };
         }
 
         private void button2_Click(object sender, EventArgs e)

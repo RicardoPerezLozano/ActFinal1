@@ -32,6 +32,7 @@ namespace ActFinal1
             this.oracion = new System.Windows.Forms.TextBox();
             this.verificar = new System.Windows.Forms.Button();
             this.Regresar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // oracion
@@ -44,7 +45,7 @@ namespace ActFinal1
             // 
             // verificar
             // 
-            this.verificar.Location = new System.Drawing.Point(372, 255);
+            this.verificar.Location = new System.Drawing.Point(343, 255);
             this.verificar.Name = "verificar";
             this.verificar.Size = new System.Drawing.Size(103, 23);
             this.verificar.TabIndex = 2;
@@ -54,18 +55,29 @@ namespace ActFinal1
             // 
             // Regresar
             // 
-            this.Regresar.Location = new System.Drawing.Point(382, 360);
+            this.Regresar.Location = new System.Drawing.Point(354, 362);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(75, 23);
             this.Regresar.TabIndex = 3;
             this.Regresar.Text = "Regresar";
             this.Regresar.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(312, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 26);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Cuenta Letras";
+            // 
             // mod3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.verificar);
             this.Controls.Add(this.oracion);
@@ -80,5 +92,6 @@ namespace ActFinal1
         private System.Windows.Forms.TextBox oracion;
         private System.Windows.Forms.Button verificar;
         private System.Windows.Forms.Button Regresar;
+        private System.Windows.Forms.Label label1;
     }
 }
