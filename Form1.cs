@@ -60,5 +60,12 @@ namespace ActFinal1
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form modulo6 = new mod6();
+
+            modulo6.Show();
+        }
     }
 }
